@@ -3,21 +3,24 @@
     font-family: Poppins;
 }
 body{
-   font-family: Poppins;
+    font-family: Poppins;
 }
 
-header{
-    
+.header{
     color: rgb(35, 35, 35);
+}
+
+.picture-Me{
+    float: left;
+    margin: 10px;
+}
+
+.aboutMe{
+    color: gray;
 }
 
 #name{
-    
     color: rgb(35, 35, 35);
-}
-
-#aboutMe{
-    color: gray;
 }
 
 #socials{
