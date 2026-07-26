@@ -6,7 +6,7 @@
 :root {
     color-scheme: light;
     color: #111111;
-    background: #f7f7f7;
+    background: #f5f5f5;
 }
 
 * {
@@ -20,102 +20,103 @@ html, body {
 
 body {
     font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f7f7f7;
+    background: #f5f5f5;
     color: #111111;
 }
 
-.hero {
-    max-width: 1080px;
-    margin: 3rem auto;
-    padding: 0 1.5rem;
+.page-shell {
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.25fr);
-    gap: 3rem;
+.sidebar {
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    position: sticky;
+    top: 1.5rem;
+}
+
+.sidebar-scroll {
+    max-height: calc(100vh - 330px);
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background: rgba(15, 23, 42, 0.18);
+    border-radius: 999px;
+}
+
+.sidebar-nav .nav-link {
+    color: #6b7280;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-nav .nav-link:hover {
+    background-color: #f8fafc;
+    color: #111827;
+}
+
+.sidebar-nav .nav-link.active {
+    background-color: #f3f4f6;
+    color: #111827;
+    box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 1rem;
+}
+
+kbd {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.45rem;
+    border-radius: 0.45rem;
+    background: #f3f4f6;
+}
+
+.btn-outline-secondary {
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+.avatar-stack .avatar {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
 }
 
-.hero-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1.75rem;
-    background: #fff;
-    box-shadow: 0 25px 80px rgba(15, 23, 42, 0.12);
+.avatar-stack .avatar:last-child {
+    background: #111827;
 }
 
-.hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: grayscale(0.06);
+.sidebar-controls .btn {
+    min-width: 42px;
+    min-height: 42px;
 }
 
-.hero-image::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.32) 1px, transparent 1px);
-    background-size: 14px 14px;
+.content-panel {
+    min-height: 60vh;
 }
 
-.hero-copy h1 {
-    margin: 0;
-    font-size: clamp(3.25rem, 5vw, 4.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
+.placeholder-content h2 {
+    letter-spacing: -0.03em;
 }
 
-.hero-copy p {
-    margin: 1.8rem 0 0;
-    color: #575757;
-    font-size: 1.05rem;
-    line-height: 1.85;
-    max-width: 54rem;
-}
-
-.social-links {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2.25rem;
-    color: #747474;
-    font-size: 0.95rem;
-}
-
-.social-links a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.social-links a:hover {
-    color: #131313;
-}
-
-.social-links a + a::before {
-    content: '›';
-    color: #b8b8b8;
-    margin-right: 0.85rem;
-}
-
-@media (max-width: 860px) {
-    .hero {
-        margin: 1.75rem auto;
+@media (max-width: 1199px) {
+    .sidebar {
+        position: static;
     }
 
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-image {
-        border-radius: 1.5rem;
-    }
-
-    .hero-copy h1 {
-        font-size: 3.25rem;
+    .sidebar-scroll {
+        max-height: none;
     }
 }
