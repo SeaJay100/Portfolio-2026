@@ -23,6 +23,10 @@ body{
     color: rgb(35, 35, 35);
 }
 
+#aboutMe{
+    color: gray;
+}
+
 #socials{
     color: gray;
 }
