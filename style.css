@@ -17,7 +17,23 @@ header{
 }
 
 #aboutMe{
+    width: min(760px, 90%);
+    margin: 2rem auto;
+    padding: 1.2rem;
+    overflow: auto;
     color: gray;
+    text-align: left;
+}
+
+#picture-Me {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+#picture-Me img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 #socials{
