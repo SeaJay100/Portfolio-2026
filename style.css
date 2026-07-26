@@ -4,25 +4,9 @@
 }
 body{
     font-family: Poppins;
+    background-color: #0d0d0d;
+    color: #ffffff;
 }
 
-.header{
-    color: rgb(35, 35, 35);
-}
 
-.picture-Me{
-    float: left;
-    margin: 10px;
-}
 
-.aboutMe{
-    color: gray;
-}
-
-#name{
-    color: rgb(35, 35, 35);
-}
-
-#socials{
-    color: gray;
-}
