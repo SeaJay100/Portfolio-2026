@@ -18,6 +18,24 @@ header{
 
 #aboutMe{
     color: gray;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+#picture-Me img {
+    border-radius: 12px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutMe-text {
+    min-width: 280px;
 }
 
 #socials{
