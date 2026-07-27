@@ -1,4 +1,4 @@
-.button {
+.button{
   border: none;
   color: white;
   padding: 15px 32px;
@@ -10,17 +10,19 @@
   cursor: pointer;
 }
 
-.button1 {
-    background-color: #3F8E00;
-}
-
-a:visited {
-  color: none;
-  background-color: transparent;
-  text-decoration: none;
+.button1{
+  background-color: hsl(93, 100%, 28%);
 }
 
 nav{
-    width: auto;
-    background-color: #1B1B1B;
+  width: auto;
+  background-color: hsla(0, 0%, 11%, 0.542);
+}
+
+.header a:hover{
+  color: hsl(93, 100%, 28%);
+}
+
+.header a{
+  color: hsl(0, 0%, 61%);
 }
