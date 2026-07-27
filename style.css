@@ -1,28 +1,61 @@
 @font-face {
     src: url(fonts/Poppins-Regular.ttf);
-    font-family: Poppins;
+    font-family: Poppins, ibm-plex-mon;
 }
-body{
-    font-family: Poppins;
+
+*{
+    box-sizing: border-box;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body{
+    background-color: #080808 !important;
 }
 
 .header{
-    color: rgb(35, 35, 35);
+    margin: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #ffff;
 }
 
 .picture-Me{
-    float: left;
+    float: right;
     margin: 10px;
+    height: auto;
+}
+
+img{
+    border-radius: 50%;
 }
 
 .aboutMe{
-    color: gray;
+    font-family: "IBM Plex Mono", monospace;
+    color: #9C9C9C;
+    box-sizing: border-box;
 }
 
 #name{
-    color: rgb(35, 35, 35);
+    color: #ffff;
 }
 
 #socials{
-    color: gray;
+    position: relative;
+    left: 500px;
+    color: #ffff;
 }
+
+
+
+
+
