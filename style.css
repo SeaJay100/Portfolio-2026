@@ -1,61 +1,115 @@
 @font-face{
-    src: url(fonts/Poppins-Regular.ttf);
-    font-family: Poppins, ibm-plex-mon;
+  src: url(fonts/Poppins-Regular.ttf);
+  font-family: Poppins, ibm-plex-mon;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-.ibm-plex-mono-regular{
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #050505 !important;
+  color: #ffffff;
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
 }
 
-.poppins-regular{
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+body {
+  line-height: 1.6;
 }
 
-html, body{
-    background-color: hsl(0, 0%, 3%) !important;
+.page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.header{
-    margin: 10px;
-    font-family: "IBM Plex Mono", monospace;
-    color: hsl(0, 0%, 100%);
+.site-header {
+  padding: 28px 32px 0;
 }
 
-.picture-Me{
-    float: right;
-    margin: 10px;
-    height: auto;
+.hero-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 1fr);
+  gap: 56px;
+  align-items: center;
+  padding: 56px 32px 40px;
 }
 
-img{
-    border-radius: 50%;
+.hero-copy {
+  max-width: 640px;
 }
 
-.aboutMe{
-    font-family: "IBM Plex Mono", monospace;
-    color: hsl(0, 0%, 61%);
-    box-sizing: border-box;
+.hero-intro{
+    color: #b3b3b3;
 }
 
-#name{
-    color: hsl(0, 0%, 100%);
+.hero-copy h1 {
+  margin: 18px 0 24px;
+  color: #b3b3b3;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
 }
 
-#socials{
-    position: relative;
-    left: 500px;
-    color: hsl(0, 0%, 100%);
+.hero-text {
+  color: #b3b3b3;
+  max-width: 680px;
+  font-family: ibm-plex-mon;
+  font-size: 25px;
+  line-height: 1.85;
+  margin-bottom: 34px;
 }
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
 
+.hero-image img {
+  width: min(100%, 420px);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
 
+@media (max-width: 900px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 42px 24px 32px;
+  }
 
+  .hero-copy {
+    order: 2;
+  }
 
+  .hero-image {
+    order: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 22px 20px 0;
+  }
+
+  .nav-list {
+    gap: 12px;
+  }
+
+  .hero-copy h1 {
+    font-size: 3rem;
+  }
+
+  .button-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .brand-strip {
+    padding: 0 20px 42px;
+  }
+}
