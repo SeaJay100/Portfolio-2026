@@ -9,6 +9,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   min-height: 100%;
   background-color: #050505 !important;
@@ -21,12 +22,75 @@ body {
 }
 
 .page-wrapper {
-  max-width: 1280px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 28px 32px 0;
+  background: rgba(5, 5, 5, 0.92);
+}
+
+
+.top-nav {
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 32px;
+  padding: 12px 20px;
+}
+
+.top-nav {
+  background-color: #1B1B1B !important;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+.nav-list a {
+  color: #c2c2c2;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: #66d131;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  background: #38b000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 0 48px rgba(56, 176, 0, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button-primary:hover {
+  transform: translateY(-1px);
+  background: #2fa000;
 }
 
 .hero-section {
@@ -73,6 +137,53 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-section {
+  grid-column: 1 / -1;
+  margin-top: 24px;
+  padding: 0 32px 40px;
+}
+
+.first-project-container {
+  width: min(250px, 100%);
+  margin: 24px auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #111111, #0b0b0b);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.first-project-name {
+  margin: 0 0 18px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: #ffffff;
+}
+
+.first-projcet-img {
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #1a1a1a;
+}
+
+.first-projcet-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.first-project-container p {
+  margin: 18px 0 0;
+  color: #d4d4d4;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 @media (max-width: 900px) {
