@@ -21,18 +21,14 @@ body {
                 justify-content: flex-end;
                 gap: 20px;
                 li {
-                    :hover {
-                        text-decoration: underline;
-                    }
                     a {
                     text-decoration: none;
                     color: #59ffb9;
+                    padding-bottom: 6px;
                     }
                 }
-                
             }
         }
     }
 }
-
 
