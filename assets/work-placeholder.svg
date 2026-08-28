@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Work project placeholder</title>
+  <desc id="desc">A simple browser window illustration representing a future portfolio project.</desc>
+  <rect width="800" height="500" fill="#101820"/>
+  <rect x="55" y="55" width="690" height="390" rx="18" fill="#f2f0e9"/>
+  <rect x="55" y="55" width="690" height="62" rx="18" fill="#d8d5ca"/>
+  <circle cx="94" cy="86" r="9" fill="#101820"/>
+  <circle cx="124" cy="86" r="9" fill="#101820"/>
+  <circle cx="154" cy="86" r="9" fill="#101820"/>
+  <rect x="105" y="165" width="250" height="22" rx="11" fill="#101820"/>
+  <rect x="105" y="207" width="420" height="14" rx="7" fill="#8b887e"/>
+  <rect x="105" y="235" width="350" height="14" rx="7" fill="#8b887e"/>
+  <rect x="105" y="295" width="150" height="52" rx="8" fill="#e76f51"/>
+  <rect x="285" y="295" width="150" height="52" rx="8" fill="#2a9d8f"/>
+  <text x="105" y="400" fill="#101820" font-family="monospace" font-size="22" font-weight="700">YOUR NEXT PROJECT</text>
+</svg>
