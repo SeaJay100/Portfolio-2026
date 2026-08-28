@@ -2,12 +2,17 @@ body {
     font-family: IBM Plex Mono;
     background-color: #111111;
     color: #ffffff;
+    margin: 0;
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(17, 17, 17, 0.75); 
+    backdrop-filter: blur(12px);
     .nav-container {
         nav {
-            padding: 1em 6em;
+            padding: 1em 6em .5em 6em;
             gap: 20px;
             font-size: small;
             ul {
@@ -15,10 +20,16 @@ body {
                 list-style-type: none;
                 justify-content: flex-end;
                 gap: 20px;
-                a {
+                li {
+                    :hover {
+                        text-decoration: underline;
+                    }
+                    a {
                     text-decoration: none;
                     color: #59ffb9;
+                    }
                 }
+                
             }
         }
     }
