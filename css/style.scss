@@ -158,12 +158,14 @@ body {
         .card-container {
             display: flex;
             flex-wrap: balance;
-            justify-content: space-evenly;
+            justify-content: space-between;
             .card {
+                flex: 1;
                 background-color: #26222d;
                 border: 1px solid #26222d;
                 border-radius: 15px;
                 min-width: 388px;
+                max-height: 400px;
                 margin: 1.5em;
                 padding: 1em;
                 padding-bottom: 1.5em;
@@ -181,4 +183,81 @@ body {
             }
         }
     }
+}
+
+.contact {
+    min-height: 100vh;
+    margin: 6em 6em .1em 6em;
+    position: relative;
+    h3 {
+        text-align: center;
+        font-size: 80px;
+        border-bottom: 2px dashed #00ff94;
+        width: fit-content;
+        margin: 0 auto 1em auto;
+        padding: .1em .5em;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        margin: 0;
+        gap: 20px;
+
+        .contact-name, .contact-message {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                color: white;
+            }
+            input, textarea {
+                width: 100%;
+                background-color: transparent;
+                border: 2px dashed #00ff94;
+                color: white;
+                padding: 14px 16px;
+                font-size: 15px;
+                font-family: inherit;
+                outline: none;
+                resize: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+
+        }
+        button {
+            padding: 12px 30px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: inherit;
+            color: #111111;
+            background-color: var(--activeLink);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            align-self: flex-start;
+            margin-top: 10px;
+            box-shadow: 0 0 15px rgba(89, 255, 185, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 0 22px rgba(89, 255, 185, 0.6);
+            }
+        }
+    }
+    img {
+        position: absolute;
+        right: 0;
+        top: 160px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em;
+    backdrop-filter: blur(12px);
 }
