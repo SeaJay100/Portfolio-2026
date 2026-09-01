@@ -102,7 +102,7 @@ body {
 
 
 .services {
-    margin: 4em 6em;
+    padding: 8em 6em;
     .services-container {
         h1 {
             text-align: center;
@@ -114,7 +114,7 @@ body {
         }
         .service-cards-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             .service-card {
                 flex: 1;
                 max-width: 350px;
@@ -144,3 +144,41 @@ body {
     }
 }
 
+.works {
+    padding: 8em 6em;
+    .works-container {
+        h1 {
+            text-align: center;
+            font-size: 80px;
+            border-bottom: 2px dashed #00ff94;
+            width: fit-content;
+            margin: 0 auto 1em auto;
+            padding: .1em .5em;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: balance;
+            justify-content: space-evenly;
+            .card {
+                background-color: #26222d;
+                border: 1px solid #26222d;
+                border-radius: 15px;
+                min-width: 388px;
+                margin: 1.5em;
+                padding: 1em;
+                padding-bottom: 1.5em;
+                img {
+                    width: auto;
+                    border-radius: 7px;
+                }
+                span {
+                    background-color: #59ffb91f;
+                    padding: 1em;
+                    border-radius: 6px;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -100,7 +100,7 @@ body {
 }
 
 .services {
-  margin: 4em 6em;
+  padding: 8em 6em;
 }
 .services .services-container h1 {
   text-align: center;
@@ -113,7 +113,7 @@ body {
 }
 .services .services-container .service-cards-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .services .services-container .service-cards-container .service-card {
   flex: 1;
@@ -139,4 +139,42 @@ body {
   font-weight: bold;
   margin: 0;
   font-size: 14px;
+}
+
+.works {
+  padding: 8em 6em;
+}
+.works .works-container h1 {
+  text-align: center;
+  font-size: 80px;
+  border-bottom: 2px dashed #00ff94;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 1em auto;
+  padding: 0.1em 0.5em;
+}
+.works .works-container .card-container {
+  display: flex;
+  flex-wrap: balance;
+  justify-content: space-evenly;
+}
+.works .works-container .card-container .card {
+  background-color: #26222d;
+  border: 1px solid #26222d;
+  border-radius: 15px;
+  min-width: 388px;
+  margin: 1.5em;
+  padding: 1em;
+  padding-bottom: 1.5em;
+}
+.works .works-container .card-container .card img {
+  width: auto;
+  border-radius: 7px;
+}
+.works .works-container .card-container .card span {
+  background-color: rgba(89, 255, 185, 0.1215686275);
+  padding: 1em;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
